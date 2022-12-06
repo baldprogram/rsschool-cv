@@ -7,6 +7,10 @@
 * **tg: @skiv_un**
 ===================================
 ## Skills
+* Basic HTML
+* Basic CSS
+* Basic JS
+* Basic Golang
 
 ## Education
 * 1996 - 2001 Sevastopol State University. Computer science. Baccalaureate and master's programmes.
