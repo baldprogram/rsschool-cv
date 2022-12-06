@@ -5,7 +5,7 @@
 ## Contacts
 * **Email: baldprogram@gmail.com**
 * **tg: @skiv_un**
-===================================
+***********************************
 ## Skills
 * Basic HTML
 * Basic CSS
