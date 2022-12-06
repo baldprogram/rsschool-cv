@@ -1,1 +1,1 @@
-# rsschool-cv
+https://baldprogram.github.io/rsschool-cv/cv
