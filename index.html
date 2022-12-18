@@ -27,7 +27,62 @@
     </nav>
   </header>
   <main>
-    Under construction
+    <h2 id="contacts">Contacts</h2>
+    <ul>
+        <li>Email: baldprogram@gmail.com</li>
+        <li>tg: @skiv_un</li>
+    </ul>
+    
+    <h2 id="about">About</h2>
+    <ul>
+        <li>Age: 43</li>
+        <li>Married</li>
+    </ul>
+    
+    <h2 id="skills">Skills</h2>
+    <ul>
+        <li>Basic HTML</li>
+        <li>Basic CSS</li>
+        <li>Basic JS</li>
+        <li>Basic Golang</li>
+    </ul>
+
+    <h2 id="education">Education</h2>
+    <ul>
+        <li>1996 - 2001 Sevastopol State University. Computer science. Baccalaureate and master’s programmes.</li>
+        <li>2002 - Course “Administration of the Internet site”</li>
+        <li>2002 - Course “Information Security”</li>
+        <li>2020 - tmlacademy.ru “Basic HTML”, “Basic CSS”</li>
+        <li>English level: A1</li>
+    </ul>
+
+    <h2>Code sample</h2>
+    <code>
+        <pre>
+func calculator(arguments <-chan int, done <-chan struct{}) <-chan int {
+    c_out := make(chan int) 
+    var summ int
+       
+    go func(c chan int){
+      defer close(c)
+        
+      for{
+        select {
+          case a:= <-arguments:
+            summ +=a
+          case <-done:
+            c_out <-summ 
+            return
+        }
+      }    
+       
+    }(c_out)
+           
+return c_out
+}
+        </pre>            
+    </code>
+
   </main>
   <footer>
     <p>Github: <a href="https://github.com/baldprogram">github.com/baldprogram</a></p>
