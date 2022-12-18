@@ -46,6 +46,15 @@ h1 {
     margin-left: 20px;
 }
 
+.header-menu {    
+    list-style-type: none;
+}
+
+.header-menu > li {
+    display: inline;
+    margin-right: 15%;
+}
+
 .footer-image {
     height: 40px;
     margin-left: 0px;
