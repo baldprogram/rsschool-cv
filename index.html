@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet"  href="./style.css">
+</head>
+<body>
+  <header>
+    <h1>Sergey Vnukov</h1>
+    <table>
+        <tr>
+            <td>
+                <figure class="header-image">
+                    <img src="./avatar.jpg" alt="my avatar" height="100%">
+                </figure>
+            </td>
+            <td>
+                <p>Js/frontend developer (junior)</p>
+                <p>Golang developer (junior)</p>
+            </td>
+        </tr>
+    </table>
+    <nav>
+        <ul class="header-menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#codesample">Code</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+        </ul>
+    </nav>
+  </header>
+  <main>
+    <h2 id="contacts">Contacts</h2>
+    <ul>
+        <li>Email: baldprogram@gmail.com</li>
+        <li>tg: @skiv_un</li>
+    </ul>
+    
+    <h2 id="about">About</h2>
+    <ul>
+        <li>Age: 43</li>
+        <li>Married</li>
+    </ul>
+    
+    <h2 id="skills">Skills</h2>
+    <ul>
+        <li>Basic HTML</li>
+        <li>Basic CSS</li>
+        <li>Basic JS</li>
+        <li>Basic Golang</li>
+    </ul>
+
+    <h2 id="education">Education</h2>
+    <ul>
+        <li>1996 - 2001 Sevastopol State University. Computer science. Baccalaureate and master’s programmes.</li>
+        <li>2002 - Course “Administration of the Internet site”</li>
+        <li>2002 - Course “Information Security”</li>
+        <li>2020 - tmlacademy.ru “Basic HTML”, “Basic CSS”</li>
+        <li>English level: A1</li>
+    </ul>
+
+    <h2 id="codesample">Code sample</h2>
+    <code>
+        <pre>
+func calculator(arguments <-chan int, done <-chan struct{}) <-chan int {
+    c_out := make(chan int) 
+    var summ int
+       
+    go func(c chan int){
+      defer close(c)
+        
+      for{
+        select {
+          case a:= <-arguments:
+            summ +=a
+          case <-done:
+            c_out <-summ 
+            return
+        }
+      }    
+       
+    }(c_out)
+           
+return c_out
+}
+        </pre>            
+    </code>
+
+  </main>
+  <footer>
+    <p>Github: <a href="https://github.com/baldprogram">github.com/baldprogram</a></p>
+    <a href="https://rs.school/js/" >
+        <figure class="footer-image">
+            <img src="https://rs.school/images/rs_school_js.svg" alt="rs_school_js logo" height="100%">
+        </figure>
+    </a>
+    <p>Dec 2022</p>
+  </footer>    
+</body>
+</html>
