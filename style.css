@@ -63,3 +63,7 @@ h1 {
     height: 40px;
     margin-left: 0px;
 }
+
+.footer-image img {
+    height: 100%;
+}
