@@ -46,6 +46,10 @@ h1 {
     margin-left: 20px;
 }
 
+.header-image img {
+    height: 100%;
+}
+
 .header-menu {    
     list-style-type: none;
 }
